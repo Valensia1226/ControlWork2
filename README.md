@@ -56,22 +56,4 @@ sudo apt install mysql-server
 //Объединить все таблицы в одну, при этом сохраняя поля, указывающие на
 прошлую принадлежность к старым таблицам.
 
-CREATE DATABASE HumanFriends;
-SHOW DATABASES;
-USE HumanFriends;
-
-CREATE TABLE Pets
-(
-   id INT PRIMARY KEY AUTO_INCREMENT,
-   date_birt DATE,
-   name VARCHAR(20),    
-   command VARCHAR(50)
-);
-
-CREATE TABLE PackAnimals
-(
-   id INT PRIMARY KEY AUTO_INCREMENT,
-   date_birt DATE,
-   name VARCHAR(20),    
-   command VARCHAR(50)
-);
+Прикреплен файл sql "HumanFriends" в корневую папку
