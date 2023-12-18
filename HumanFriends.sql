@@ -44,7 +44,7 @@ CREATE TABLE animals_type (
 
 INSERT INTO animals_group (id, _name) VALUES
 (1, 'Pets'),
-(2, 'Pack_anivals');
+(2, 'Pack_animals');
 
 INSERT INTO animals_type (id, animals_group_id, _name) VALUES
 (1, 1, 'Cat'),
@@ -69,7 +69,18 @@ INSERT INTO animals (id, animals_type_id, first_name, date_birt) VALUES
 INSERT INTO commands (id, _name, descr) VALUES
 (1, 'Voice', 'voice'),
 (2, 'Give_paw', 'give me your paw'),
-(3, 'Sit', 'sit');
+(3, 'Sit', 'sit'),
+(4, 'Walk', 'walk straight');
+
+INSERT INTO animals_commands (id, animals_id, commands_id) VALUES
+(1, 1, 2),
+(2, 3, 1),
+(3, 3, 2),
+(4, 3, 3),
+(5, 5, 4),
+(6, 6, 4),
+(7, 7, 4),
+(8, 10, 4);
 
 
  
